@@ -38,11 +38,23 @@
         </div>
       </div>
       <div class="image-container">
-        <picture>KESKEN </picture>
-        <img
-          src="./images/image-header-desktop.jpg"
-          alt="Picture of happy business team"
-        />
+        <picture>
+          <source
+            media="(min-width: 650px)"
+            srcset="./images/image-header-desktop.jpg"
+            type="image/jpeg"
+          />
+          <source
+            media="(min-width: 649px)"
+            srcset="./images/image-header-mobile.jpg"
+            type="image/jpeg"
+          />
+          <img
+            class="card__image"
+            src="./images/image-header-mobile.jpg"
+            alt="Picture of happy business team"
+          />
+        </picture>
       </div>
     </main>
   </body>
