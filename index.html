@@ -11,11 +11,11 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+    <link rel="stylesheet" href="style.css">
     <title>Stats preview card component</title>
   </head>
   <body>
-    <main>
+    <main class="card-container">
       <div class="info-container">
         <h1>
           Get <span class="highlight">insights</span> that help your business
@@ -40,21 +40,22 @@
       <div class="image-container">
         <picture>
           <source
-            media="(min-width: 650px)"
+            media="(min-width: 481px)"
             srcset="./images/image-header-desktop.jpg"
             type="image/jpeg"
           />
           <source
-            media="(min-width: 649px)"
+            media="(min-width: 480px)"
             srcset="./images/image-header-mobile.jpg"
             type="image/jpeg"
           />
           <img
-            class="card__image"
-            src="./images/image-header-mobile.jpg"
+            class="image"
+            src="./images/image-header-desktop.jpg"
             alt="Picture of happy business team"
           />
         </picture>
+        
       </div>
     </main>
   </body>
