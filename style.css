@@ -34,7 +34,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: var(--main-bg-color);
-    
+
 }
 
 img,
@@ -44,7 +44,7 @@ svg {
     block-size: auto;
     object-fit: cover;
     height: 100%;
-    max-width: 100%;
+    width: 100%;
 }
 
 input,
@@ -66,43 +66,51 @@ h6 {
 
 .image {
     border: 1px solid yellow;
+    mix-blend-mode: multiply;
+    opacity: 0.75;
 }
 
 .card-container {
+    max-width: 68rem;
     margin: 1.5rem;
     border-radius: 0.4rem;
-    max-width: 68rem;
+
     display: flex;
-    
-    /* max-height: 445px; */
+    flex-wrap: wrap;
 }
 
 .info-container {
     background-color: var(--card-bg);
     border: 1px solid red;
     padding: 1rem;
-    flex-basis: 50%;
+   
+    flex-basis: calc((600px - 100%) * 999);
+    flex-grow: 1;
     flex-wrap: wrap;
-    
+}
+
+.info-container > :nth-last-child(n+ 3),
+.info-container > :nth-last-child(n+ 3)~* {
+    flex-basis: 100%;
 }
 
 .image-container {
-    background-color: purple;
-    border: 2px solid green;
-    flex-basis: 50%;
-    
-    
+    background: var(--accent-clr);
+    flex-basis: 0;
+    flex-grow: 1;
+
 }
+
 
 .stats-container {
     border: 1px solid blue;
     display: flex;
     flex-wrap: wrap;
+    gap: 1rem;
 }
 
 
-
-@media (max-width: 600px) {
+@media (max-width: 652px) {
     body {
         display: flex;
         flex-direction: column;
