@@ -26,6 +26,7 @@ body {
 
 
 body {
+    font-size: 0.9rem;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     background-color: thistle;
@@ -67,11 +68,27 @@ h6 {
 .image {
     border: 1px solid yellow;
 }
+.tinted-image {
+    width: 550px;
+    height: 100vh;
+    
+    background: 
+    /* make both colors the same for a single color
+       change one of the colors for a two-color effect*/ 
+    linear-gradient(
+      rgba(255, 0, 0, 0.45), 
+      rgba(315, 212, 707, 0.45)
+    ),
+    url(./images/image-header-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(rgb(72,0,72,0.8), rgb(192,72,72,0.8)), url("./images/image-header-desktop.jpg");  /* Chrome 10-25, Safari 5.1-6 */
+  }
 
 .card-container {
     margin: 1.5rem;
     border-radius: 0.4rem;
-    max-width: 68rem;
+    max-width: 69rem;
     display: flex;
     
     /* max-height: 445px; */
@@ -80,14 +97,14 @@ h6 {
 .info-container {
     background-color: var(--card-bg);
     border: 1px solid red;
-    padding: 1rem;
+    padding: 4rem 4rem 4rem 4rem;
     flex-basis: 50%;
     flex-wrap: wrap;
     
 }
 
 .image-container {
-    background-color: purple;
+    
     border: 2px solid green;
     flex-basis: 50%;
     
