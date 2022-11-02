@@ -9,9 +9,9 @@
 
 ### Links
 
- Code: [CLICK](https://github.com/patrick-selin/05-stats-preview-card-component)
+ Live Site: URL[CLICK](https://github.com/patrick-selin/05-stats-preview-card-component)
 
- Live Site URL: [CLICK](https://patrick-selin.github.io/05-stats-preview-card-component/).
+ Code: [CLICK](https://patrick-selin.github.io/05-stats-preview-card-component/).
 
 ### Built with
 
