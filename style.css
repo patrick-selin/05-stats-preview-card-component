@@ -87,6 +87,7 @@ h6 {
     flex-basis: calc((600px - 100%) * 999);
     flex-grow: 1;
     flex-wrap: wrap;
+    
 }
 
 .info-container > :nth-last-child(n+ 3),
