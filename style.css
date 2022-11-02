@@ -22,6 +22,8 @@ html,
 body {
     height: 100vh;
     color: aliceblue;
+    font-family: 'Inter', sans-serif;
+    /* font-family: 'Lexend Deca', sans-serif; */
 }
 
 
@@ -64,34 +66,55 @@ h6 {
     overflow-wrap: break-word;
 }
 
+h1 {
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+p {
+    color: var(--p-stat-text);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
 .image {
-    border: 1px solid yellow;
     mix-blend-mode: multiply;
     opacity: 0.75;
+}
+
+.highlight {
+    color: var(--accent-clr);
 }
 
 .card-container {
     max-width: 68rem;
     margin: 1.5rem;
-    border-radius: 0.4rem;
-
+    border-radius: 0.6rem;
+    overflow: hidden;
+    border-collapse: separate;
     display: flex;
     flex-wrap: wrap;
 }
 
 .info-container {
     background-color: var(--card-bg);
-    border: 1px solid red;
-    padding: 1rem;
-   
-    flex-basis: calc((600px - 100%) * 999);
+    padding: 1rem 3rem 1rem 1rem;
+    flex-basis: calc((780px - 100%) * 999);
     flex-grow: 1;
     flex-wrap: wrap;
-    
 }
 
-.info-container > :nth-last-child(n+ 3),
-.info-container > :nth-last-child(n+ 3)~* {
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 2rem;
+    height: 100%;
+}
+
+.info-container> :nth-last-child(n+ 3),
+.info-container> :nth-last-child(n+ 3)~* {
     flex-basis: 100%;
 }
 
@@ -102,54 +125,63 @@ h6 {
 
 }
 
-
 .stats-container {
-    border: 1px solid blue;
+
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
     gap: 1rem;
+
 }
 
+.stats-container>p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: var(--p-stat-text);
+    text-transform: uppercase;
 
-@media (max-width: 652px) {
+}
+
+@media (max-width: 840px) {
     body {
         display: flex;
         flex-direction: column;
-        
     }
+
     .card-container {
         display: flex;
         flex-direction: column-reverse;
-    
+        overflow: visible;
+        text-align: center;
+    }
+    .info-container {
+        padding: 1rem 0rem 1rem 0rem;
     }
 
-    
+
     .stats-container {
         display: flex;
         align-items: center;
         flex-direction: column;
-        
-        
     }
-
 }
 
 
+@media (min-width: 1000px) {
+
+    .card-container p,
+    h1 {
+        padding-right: 2rem;
+    }
+    .stats-container {
+        padding-right: 2rem;
+    }
+}
 
 
+@media (max-width: 546px) {
 
-/* # Front-end Style Guide
-
-## Typography
-
-### Body Copy
-
-- Font size: 15px
-
-### Font
-
-- Family: [Inter](https://fonts.google.com/specimen/Inter)
-- Weights: 400, 700
-
-- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
-- Weights: 400 */
+    .card-container h1 {
+        font-size: 1.7rem;
+    }
+}
