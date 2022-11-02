@@ -5,7 +5,7 @@
 
 ### Screenshot
 
-![solution](https://github.com/patrick-selin/nft-preview-card-component/blob/main/Screenshot_NFT_preview_card_component.png)
+![solution](https://github.com/patrick-selin/05-stats-preview-card-component/blob/main/images/Stats%20preview%20card%20component%20solution.png)
 
 ### Links
 
