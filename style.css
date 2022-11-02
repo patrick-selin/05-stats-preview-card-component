@@ -102,6 +102,7 @@ h6 {
     padding: 1rem;
     flex-basis: 50%;
     flex-wrap: wrap;
+    
 }
 
 .info-container > :nth-last-child(n+ 3),
